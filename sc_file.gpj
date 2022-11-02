@@ -1,0 +1,22 @@
+#!gbuild
+[Subproject]
+        -Isrc/smc_gen/Config_TAUB0
+        -Isrc/smc_gen/general
+        -Isrc/smc_gen/r_pincfg
+        -object_dir=objs\
+src/smc_gen/Config_TAUB0/Config_TAUB0.c
+src/smc_gen/Config_TAUB0/Config_TAUB0.h
+src/smc_gen/Config_TAUB0/Config_TAUB0_user.c
+src/smc_gen/general/r_cg_cgc.c
+src/smc_gen/general/r_cg_cgc.h
+src/smc_gen/general/r_cg_cgc_user.c
+src/smc_gen/general/r_cg_intvector.c
+src/smc_gen/general/r_cg_macrodriver.h
+src/smc_gen/general/r_cg_main.c
+src/smc_gen/general/r_cg_systeminit.c
+src/smc_gen/general/r_cg_taub.h
+src/smc_gen/general/r_cg_userdefine.h
+src/smc_gen/general/r_smc_interrupt.c
+src/smc_gen/general/r_smc_interrupt.h
+src/smc_gen/r_pincfg/Pin.c
+src/smc_gen/r_pincfg/Pin.h

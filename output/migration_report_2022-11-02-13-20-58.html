@@ -1,0 +1,238 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><style type="text/css">
+table {
+    font-family: verdana,arial,sans-serif;
+    font-size:14px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #a9c6c9;
+	width: 100%
+}
+table thead td {
+    background-color:#4472C7;    border-width: 1px;
+    padding: 13px;
+    border-style: solid;
+    border-color: #a9c6c9;
+	text-align: center;
+	color:#ffffff;
+}
+table tbody td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+.evenrowcolor{
+    background-color:#CFD5EA;
+}
+.oddrowcolor{
+    background-color:#E9EBF5;
+}
+</style>
+</head>
+<body>
+<div style="margin-left:auto;margin-right:auto;width:80%;">
+<div>
+  <h1 style="text-align: center">SmartConfigurator MCU migration report</h1>
+</div>
+<div>
+  <p>From device: R7F701649.</p>
+</div>
+<div>
+  <p>To device: R7F701649.</p>
+</div>
+<div>
+  <h1 style="text-align: left">1 Clock Settings</h1>
+<div>
+  <p>Success. Settings are fully converted</p>
+</div>
+<div>
+  <p>The following is a summary table with all configured clock values and their conversion status.</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 1-1 Board input clock values migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>MainOSC</td>
+<td>24000.0</td>
+<td>24000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>SubOSC</td>
+<td>32.768</td>
+<td>32.768</td>
+<td>Success.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+  <p></p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 1-2 Configured clock values migration status</caption>
+<thead>
+<tr>
+<td>Settings</td>
+<td>Value(Before device)</td>
+<td>Value(After device)</td>
+<td>Migration status</td>
+</tr>
+</thead>
+<tbody> 
+<tr class ="evenrowcolor">
+<td>TAUJ Clock(C_AWO_TAUJ)</td>
+<td>8000000.0</td>
+<td>8000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>WDTA0 Clock(C_AWO_WDTA)</td>
+<td>1875.0</td>
+<td>1875.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>ADCA0 Clock(C_AWO_ADCA)</td>
+<td>8000000.0</td>
+<td>8000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>RTCA Clock(C_AWO_RTCA)</td>
+<td>-</td>
+<td>-</td>
+<td>Success.</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CPU Clock(C_ISO_CPUCLK)</td>
+<td>8000000.0</td>
+<td>8000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>RLIN Clock(C_ISO_LIN)</td>
+<td>4000000.0</td>
+<td>4000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>RS-CANFD Clock(C_ISO_CAN)</td>
+<td>8000000.0</td>
+<td>8000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>RS-CANFD Clock(C_ISO_CANOSC)</td>
+<td>-</td>
+<td>-</td>
+<td>Success.</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>CSI Clock(C_ISO_CSI)</td>
+<td>8000000.0</td>
+<td>8000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>Peripheral Clock(C_ISO_PERI1)</td>
+<td>8000000.0</td>
+<td>8000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>Peripheral Clock(C_ISO_PERI2)</td>
+<td>4000000.0</td>
+<td>4000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>FOUT Clock(C_AWO_FOUT)</td>
+<td>-</td>
+<td>-</td>
+<td>Success.</td>
+</tr>
+<tr class ="evenrowcolor">
+<td>RIIC Clock(C_ISO_IIC)</td>
+<td>4000000.0</td>
+<td>4000000.0</td>
+<td>Success.</td>
+</tr>
+<tr class ="oddrowcolor">
+<td>ADCA1 Clock(C_ISO_ADCA)</td>
+<td>-</td>
+<td>-</td>
+<td>Success.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+  <p></p>
+</div>
+</div>
+<div>
+  <h1 style="text-align: left">2 Interrupt</h1>
+<div>
+  <p>The following is a summary table with all interrupt assignments and their conversion status</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 2-1 Interrupt Migration Status</caption>
+<thead>
+<tr>
+<td>Vector Number</td>
+<td>Old Interrupt Assignment</td>
+<td>New Interrupt Assignment</td>
+<td>Status (Before device change)</td>
+<td>Status (After device change)</td>
+<td>Interrupt Migration Status</td>
+</tr>
+</thead>
+<tbody> 
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h1 style="text-align: left">3 Pins</h1>
+<div>
+  <p>The following is a summary table with all pin assignments and their conversion status.</p>
+</div>
+<div>
+<table class="altrowstable">
+<caption>Table 3-1 Pin Migration Status</caption>
+<thead>
+<tr>
+<td>Function</td>
+<td>Pin Number (Before)</td>
+<td>Pin Number (After)</td>
+<td>Status</td>
+</tr>
+</thead>
+<tbody> 
+</tbody>
+</table>
+</div>
+</div>
+<div>
+  <h1 style="text-align: left">4 Software Component</h1>
+<div>
+  <p>No configurations available.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

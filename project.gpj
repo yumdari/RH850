@@ -1,0 +1,3 @@
+#!gbuild
+[Program]
+sc_file.gpj [Subproject]
