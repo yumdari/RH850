@@ -14,14 +14,14 @@
 * following link:
 * http://www.renesas.com/disclaimer
 *
-* Copyright (C) 2022 Renesas Electronics Corporation. All rights reserved.
+* Copyright (C) 2016, 2022 Renesas Electronics Corporation. All rights reserved.
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
-* File Name    : r_cg_main.c
-* Version      : 1.0.110
+* File Name    : r_smc_interrupt.c
+* Version      : 1.1.1
 * Device(s)    : R7F701649
-* Description  : This function implements main function.
+* Description  : None
 ***********************************************************************************************************************/
 /***********************************************************************************************************************
 Pragma directive
@@ -34,45 +34,12 @@ Includes
 ***********************************************************************************************************************/
 #include "r_cg_macrodriver.h"
 #include "r_cg_userdefine.h"
-#include "Config_TAUB0.h"
-#include "r_cg_cgc.h"
-/* Start user code for include. Do not edit comment generated here */
-/* End user code. Do not edit comment generated here */
+#include "r_smc_interrupt.h"
 
 /***********************************************************************************************************************
 Global variables and functions
 ***********************************************************************************************************************/
-/* Start user code for global. Do not edit comment generated here */
-/* End user code. Do not edit comment generated here */
-void r_main_userinit(void);
-
-/***********************************************************************************************************************
-* Function Name: main
-* Description  : This function This function implements main function.
-* Arguments    : None
-* Return Value : None
-***********************************************************************************************************************/
-void main(void)
+void R_Interrupt_Create(void)
 {
-    r_main_userinit();
-    /* Start user code for main. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
-}
 
-/***********************************************************************************************************************
-* Function Name: r_main_userinit
-* Description  : This function This function adds user code before implementing main function.
-* Arguments    : None
-* Return Value : None
-***********************************************************************************************************************/
-void r_main_userinit(void)
-{
-    DI();
-    /* Start user code for r_main_userinit. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
-    R_Systeminit();
-    EI();
 }
-
-/* Start user code for adding. Do not edit comment generated here */
-/* End user code. Do not edit comment generated here */

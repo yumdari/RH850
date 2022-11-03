@@ -1,0 +1,24 @@
+project: device\sc_linkerdr.ld \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\crt0.o objs\Config_TAUB0.o \
+ objs\Config_TAUB0_user.o objs\r_cg_cgc.o objs\r_cg_cgc_user.o \
+ objs\r_cg_intvector.o objs\r_cg_main.o objs\r_cg_systeminit.o \
+ objs\r_smc_interrupt.o objs\Pin.o objs\sc_startup.o objs\sc_intprg.o \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libmulti.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libfmalloc.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libwchar_s32.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libansi.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libwc_s32.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libmath_sd.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libind_sd.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libstartup.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libsys.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libarch.a
+
+:cmdList=ccv850 $(FILETYPEOPTIONS) $(OBJECTS) -MD -Idevice -G -object_dir=objs -bsp generic -cpu=rh850g3kh -top_project C:\Users\yumdari\smartconfigurator\workspace\default.gpj -o project ; 
+:cmdHash=0x80d30c8b
+
+:objList=objs\Config_TAUB0.o objs\Config_TAUB0_user.o objs\r_cg_cgc.o objs\r_cg_cgc_user.o objs\r_cg_intvector.o objs\r_cg_main.o objs\r_cg_systeminit.o objs\r_smc_interrupt.o objs\Pin.o device\sc_linkerdr.ld objs\sc_startup.o objs\sc_intprg.o ; 
+:objHash=0xeed6795f
+
+:installDir=c:\ghs\v800.v2015.1.7\comp_201517
+:installDirHash=0x433d81d7

@@ -638,10 +638,10 @@
             <allocatable id="TAUB0">
                 <allocatable id="MASTER0">
                     <osocket id="masteroutClock" value="800000.0"/>
-                    <isocket id="slaveClock" value="999.424"/>
+                    <isocket id="slaveClock" value="98.304"/>
                     <isocket id="masterinClock" value="8.0E9"/>
                     <option enabled="true" id="IntervalValue" selection="IntervalValue">
-                        <item id="IntervalValue" input="1000" vlaue="121"/>
+                        <item id="IntervalValue" input="100" vlaue="11"/>
                     </option>
                     <option enabled="true" id="IntervalUnit" selection="ms">
                         <item id="ms" input="" vlaue="0"/>
@@ -674,7 +674,7 @@
                 <allocatable id="SLAVE8">
                     <isocket id="slaveClock" value="8.0E7"/>
                     <option enabled="true" id="dutyvalue" selection="dutyvalue">
-                        <item id="dutyvalue" input="50" vlaue="61"/>
+                        <item id="dutyvalue" input="50" vlaue="6"/>
                     </option>
                     <option enabled="true" id="salveoutput" selection="outputah">
                         <item id="outputah" input="" vlaue="0"/>

@@ -1,0 +1,10 @@
+#!gbuild
+[Program]
+		-Idevice
+sc_file.gpj [Subproject]
+device\sc_linkerdr.ld
+device\sc_startup.850
+device\dr7f701649_irq.h
+device\sc_intprg.c
+device\iodefine.h
+connection\connection.gpj
