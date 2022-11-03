@@ -1,0 +1,26 @@
+project: device\sc_linkerdr.ld \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\crt0.o objs\Config_ICU.o \
+ objs\Config_ICU_user.o objs\Config_PORT.o objs\Config_PORT_user.o \
+ objs\r_cg_cgc.o objs\r_cg_cgc_user.o objs\r_cg_intvector.o objs\r_cg_main.o \
+ objs\r_cg_systeminit.o objs\r_smc_interrupt.o objs\Pin.o \
+ objs\Config_TAUD0_0.o objs\Config_TAUD0_0_user.o objs\Config_TAUD0_1.o \
+ objs\Config_TAUD0_1_user.o objs\sc_startup.o objs\sc_intprg.o \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libmulti.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libfmalloc.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libwchar_s32.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libansi.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libwc_s32.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libmath_sd.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libind_sd.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libstartup.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libsys.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libarch.a
+
+:cmdList=ccv850 $(FILETYPEOPTIONS) $(OBJECTS) -MD -Idevice -Isrc\smc_gen\Config_ICU -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\general -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\Config_TAUD0_1 -Isrc\smc_gen\Config_TAUD0_0 -G -bsp generic -cpu=rh850g3kh -object_dir=objs\ -top_project "C:\\Users\\yumdari\\Downloads\\RH850_F1KM-S4_Technical_R03.1_사전배포용\\03_RH850_F1KM-S4_Technical_R03.1_사전배포용\\Sample SW\\Day2_2_Timer\\(Question)sample_PJ_files_timer\\default.gpj" -o project ; 
+:cmdHash=0x2d4be95b
+
+:objList=objs\Config_ICU.o objs\Config_ICU_user.o objs\Config_PORT.o objs\Config_PORT_user.o objs\r_cg_cgc.o objs\r_cg_cgc_user.o objs\r_cg_intvector.o objs\r_cg_main.o objs\r_cg_systeminit.o objs\r_smc_interrupt.o objs\Pin.o objs\Config_TAUD0_0.o objs\Config_TAUD0_0_user.o objs\Config_TAUD0_1.o objs\Config_TAUD0_1_user.o device\sc_linkerdr.ld objs\sc_startup.o objs\sc_intprg.o ; 
+:objHash=0x200c232e
+
+:installDir=c:\ghs\v800.v2015.1.7\comp_201517
+:installDirHash=0x433d81d7
