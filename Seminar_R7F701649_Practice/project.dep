@@ -1,0 +1,24 @@
+project: device\sc_linkerdr.ld \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\crt0.o objs\Config_CSIG0.o \
+ objs\Config_CSIG0_user.o objs\Config_PORT.o objs\Config_PORT_user.o \
+ objs\r_cg_cgc.o objs\r_cg_cgc_user.o objs\r_cg_intvector.o objs\r_cg_main.o \
+ objs\r_cg_systeminit.o objs\r_smc_interrupt.o objs\Pin.o objs\sc_startup.o \
+ objs\sc_intprg.o C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libmulti.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libfmalloc.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libwchar_s32.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libansi.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libwc_s32.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libmath_sd.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libind_sd.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libstartup.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libsys.a \
+ C:\GHS\V800.V2015.1.7\comp_201517\lib\rh850\libarch.a
+
+:cmdList=ccv850 $(FILETYPEOPTIONS) $(OBJECTS) -MD -Idevice -Isrc\smc_gen\Config_CSIG0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\general -Isrc\smc_gen\r_pincfg -G -bsp generic -cpu=rh850g3kh -object_dir=objs\ -top_project "C:\\Users\\yumdari\\Downloads\\RH850_F1KM-S4_Technical_R03.1_사전배포용\\03_RH850_F1KM-S4_Technical_R03.1_사전배포용\\Sample SW\\Day2_3_CSI (SPI)\\Seminar_R7F701649_Practice\\default.gpj" -o project ; 
+:cmdHash=0x7e928c61
+
+:objList=objs\Config_CSIG0.o objs\Config_CSIG0_user.o objs\Config_PORT.o objs\Config_PORT_user.o objs\r_cg_cgc.o objs\r_cg_cgc_user.o objs\r_cg_intvector.o objs\r_cg_main.o objs\r_cg_systeminit.o objs\r_smc_interrupt.o objs\Pin.o device\sc_linkerdr.ld objs\sc_startup.o objs\sc_intprg.o ; 
+:objHash=0x67b81e4f
+
+:installDir=c:\ghs\v800.v2015.1.7\comp_201517
+:installDirHash=0x433d81d7

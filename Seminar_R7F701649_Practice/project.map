@@ -1,0 +1,615 @@
+Host OS:	Windows
+ELXR: Copyright (C) 1983-2015 Green Hills Software.  All Rights Reserved.
+Release: Compiler v2015.1.7
+Build Directory: [Directory] BTOWORKER6:c:/build_2015_1_bto/2015-10-21.2100-2015_1_bto/win64-comp
+Revision: [VCInfo] http://toolsvc/branches/release-branch-70-bto/src@544153 (built by build)
+Revision Date: Thu Oct 22 16:05:22 2015
+
+Release Date: Thu Oct 22 16:32:31 2015
+
+
+
+
+Load Map Thu Nov 03 14:50:22 2022
+Image Summary
+
+  Section              Base      Size(hex)    Size(dec)  SecOffs
+  .intvect             00000000  000001f4          500   0000180
+  .intvect_end         000001ff  00000000            0   0000000
+  EIINTTBL             00000200  00000598         1432   0000374
+  EIINTTBL_end         000007e4  00000000            0   0000000
+  .rozdata             000007e4  00000000            0   0000000
+  .robase              000007e4  00000000            0   0000000
+  .rosdata             000007e4  00000000            0   0000000
+  .rodata              000007e4  00000000            0   0000000
+  .text                000007f0  000078fe        30974   0000910
+  .fixaddr             000080f0  00000000            0   0000000
+  .fixtype             000080f0  00000000            0   0000000
+  .secinfo             000080f0  00000060           96   0008210
+  .syscall             00008150  00000006            6   0008270
+  .romdata             00008158  0000004c           76   0008278
+  .romzdata            000081a4  00000000            0   0000000
+  .romsdata            000081a4  00000000            0   0000000
+  .romtdata            000081a4  00000000            0   0000000
+  .romsldata           000081a4  00000000            0   0000000
+  .bcode               01000000  00000000            0   0000000
+  .bconst              01000000  00000000            0   0000000
+  .data                febc0000  0000004c           76   0008278
+  .sldata              febc004c  00000000            0   0000000
+  .slbss               febc004c  00000000            0   0000000
+  .bss                 febc004c  00000440         1088   0000000
+  .sda_start           febc048c  00000000            0   0000000
+  .sdata               febc048c  00000000            0   0000000
+  .sbss                febc048c  00000000            0   0000000
+  .sda_end             febc048c  00000000            0   0000000
+  .zdata               febc048c  00000000            0   0000000
+  .zbss                febc048c  00000000            0   0000000
+  .tdata               febc048c  00000000            0   0000000
+  .stack               febc048c  00001000         4096   0000000
+  .heapbase            febc148c  00000000            0   0000000
+  .heap                febc148c  0003eb74       256884   0000000
+  .rdata               fef00000  00000000            0   0000000
+  .rbss                fef00000  00000000            0   0000000
+  .note.renesas        00000000  0000003c           60   00082c4
+  .linfix              00000000  00000000            0   0000000
+  .gstackfix           00000000  00000000            0   0000000
+
+Load Map Thu Nov 03 14:50:22 2022
+Module Summary
+
+  Origin+Size    Section          Module
+000007f0+000128  .text            crt0.o
+00000000+00003c  .note.renesas    <RENESAS ABI INFO>
+00000918+00039a  .text            Config_CSIG0.o
+00000cb2+0000b0  .text            Config_CSIG0_user.o
+00000d62+000092  .text            Config_PORT.o
+00000df4+000002  .text            Config_PORT_user.o
+00000df6+0004ac  .text            r_cg_cgc.o
+000012a2+000002  .text            r_cg_cgc_user.o
+00000200+000598  EIINTTBL         r_cg_intvector.o
+000012a4+0000d6  .text            r_cg_main.o
+febc0000+00002a  .data            r_cg_main.o
+0000137a+00001a  .text            r_cg_systeminit.o
+00001394+000002  .text            r_smc_interrupt.o
+00001396+0001d2  .text            Pin.o
+00001568+00006c  .text            sc_startup.o
+00000000+0001f4  .intvect         sc_startup.o
+000015d4+006424  .text            sc_intprg.o
+000079f8+000006  .text            libmulti.a
+febc002c+000004  .data            libmulti.a
+febc009e+0003e8  .bss             libmulti.a
+000079fe+000066  .text            libansi.a(ccexit.o)
+00007a64+00035e  .text            libstartup.a(ind_crt0.o)
+00007dd0+000060  .text            libstartup.a(ind_mset.o)
+00007e30+000114  .text            libstartup.a(ind_mcpy.o)
+00007f44+0000ac  .text            libsys.a(ind_exit.o)
+febc0488+000004  .bss             libsys.a(ind_exit.o)
+00008150+000006  .syscall         libsys.a(ind_dots.o)
+00007ff0+000022  .text            libsys.a(ind_call.o)
+00008012+0000ba  .text            libsys.a(ind_crt1.o)
+febc0030+00001c  .data            libsys.a(ind_crt1.o)
+000080cc+000006  .text            libsys.a(ind_lock.o)
+000080d2+00001c  .text            libsys.a(ind_errn.o)
+000080f0+000060  .secinfo         <section info>
+febc004c+000052  COMMON -> .bss   <commons>
+
+Load Map Thu Nov 03 14:50:22 2022
+Global Symbols (sorted alphabetically)
+
+ .intvect         00000000+000000 .intvect..D.3A.5C00.2EFuco.2Dele_Work.5CMicrocontrol.5CRH850.5CSmart_Configuration.5CSample.5CSeminar_R7F701649.5Cobjs.5Csc_startup.
+ EIINTTBL         00000200+000598 _INT_Vectors
+ .text            00001568+000000 _RESET
+ .text            00000df6+0004ac _R_CGC_Create
+ .text            000012a2+000002 _R_CGC_Create_UserInit
+ .text            00000918+0002b0 _R_Config_CSIG0_Create
+ .text            00000cb2+000002 _R_Config_CSIG0_Create_UserInit
+ .text            00000c2c+000086 _R_Config_CSIG0_Send
+ .text            00000bc8+000020 _R_Config_CSIG0_Start
+ .text            00000be8+000044 _R_Config_CSIG0_Stop
+ .text            00000d62+000092 _R_Config_PORT_Create
+ .text            00000df4+000002 _R_Config_PORT_Create_UserInit
+ .text            00001394+000002 _R_Interrupt_Create
+ .text            00001360+00001a _R_MAIN_UserInit
+ .text            00001396+0001d2 _R_Pins_Create
+ .text            0000137a+00001a _R_Systeminit
+ .text            00007f44+00006a __Exit
+                  00000000+000000 ___atexit_cleanup_func
+                  00000000+000000 ___cpp_exception_cleanup
+                  00000000+000000 ___cpp_exception_init
+ .syscall         00008150+000006 ___dotsyscall
+ .text            000080dc+000008 ___gh_errno_ptr
+ .text            000080e4+00000a ___gh_get_errno
+                  00000000+000000 ___gh_iob_init
+ .text            000080d0+000002 ___gh_lock_init
+ .text            000080d2+00000a ___gh_set_errno
+ .text            000080cc+000002 ___ghsLock
+ .text            000080ce+000002 ___ghsUnlock
+                  00000000+000000 ___ghs_GetCurrentThreadID
+                  00000000+000000 ___ghs_GetCurrentThreadName
+                  00000000+000000 ___ghs_InterruptLock
+                  00000000+000000 ___ghs_InterruptUnlock
+                  00000000+000000 ___ghs_RunTimeErrorDetected
+ .text            00007fae+000042 ___ghs_at_exit
+                  00000000+000000 ___ghs_board_cache_sync
+                  00000000+000000 ___ghs_board_devices_init
+                  00000000+000000 ___ghs_board_memory_init
+                  00000000+000000 ___ghs_call_table
+                  00000000+000000 ___ghs_checksum
+                  00000000+000000 ___ghs_coverage_init
+                  00000000+000000 ___ghs_cpp_exception_cleanup
+                  00000000+000000 ___ghs_cpp_exception_init
+                  00000000+000000 ___ghs_decompress
+ .text            00007a64+00035e ___ghs_ind_crt0
+ .text            00008012+0000ba ___ghs_ind_crt1
+ .syscall         00008150+000006 ___ghs_initial_dotsyscall
+                  00000000+000000 ___ghs_lock_create
+                  00000000+000000 ___ghs_lock_destroy
+                  00000000+000000 ___ghs_lock_lock
+                  00000000+000000 ___ghs_lock_unlock
+                  00000002+000000 ___ghs_log_fee_level
+                  00000000+000000 ___ghs_manprf_init
+                  00000000+000000 ___ghs_multicore_init_flag
+ .text            00000900+000018 ___ghs_multicore_wait_for_init
+                  00000000+000000 ___ghs_rambootcodeend
+                  00000000+000000 ___ghs_rambootcodestart
+                  fec00000+000000 ___ghs_ramend
+                  febc0000+000000 ___ghs_ramstart
+                  00000000+000000 ___ghs_rombootcodeend
+                  00000000+000000 ___ghs_rombootcodestart
+                  00400000+000000 ___ghs_romend
+                  00000000+000000 ___ghs_romstart
+                  fef10000+000000 ___ghs_rramend
+                  fef00000+000000 ___ghs_rramstart
+                  00000000+000000 ___ghs_set_stack_chk_guard
+ .text            00007ff0+000022 ___ghs_syscall
+                  00000000+000000 ___ghs_undefined_func
+ .fixaddr         000080f0+000000 ___ghsbegin_fixaddr
+ .fixtype         000080f0+000000 ___ghsbegin_fixtype
+                  00000000+000000 ___ghsbegin_picbase
+                  00000000+000000 ___ghsbegin_pidbase
+ .robase          000007e4+000000 ___ghsbegin_robase
+ .sda_end         febc048c+000000 ___ghsbegin_sda_end
+ .sda_start       febc048c+000000 ___ghsbegin_sda_start
+                  00000000+000000 ___ghsbegin_sdabase
+ .secinfo         000080f0+000000 ___ghsbegin_secinfo
+ .secinfo         00008114+000000 ___ghsbinfo_aclear
+ .secinfo         00008150+000000 ___ghsbinfo_acopy
+ .secinfo         00008150+000000 ___ghsbinfo_bcopy
+ .secinfo         000080f0+000024 ___ghsbinfo_clear
+ .secinfo         00008150+000000 ___ghsbinfo_comacopy
+ .secinfo         00008150+000000 ___ghsbinfo_comcopy
+ .secinfo         00008150+000000 ___ghsbinfo_comtcopy
+ .secinfo         00008114+00003c ___ghsbinfo_copy
+ .secinfo         00008150+000000 ___ghsbinfo_tcopy
+ .secinfo         00008150+000000 ___ghseinfo_bcopy
+ .secinfo         00008114+000000 ___ghseinfo_clear
+ .secinfo         00008150+000000 ___ghseinfo_comcopy
+ .secinfo         00008150+000000 ___ghseinfo_copy
+ .fixaddr         000080f0+000000 ___ghsend_fixaddr
+ .fixtype         000080f0+000000 ___ghsend_fixtype
+ .stack           febc148c+000000 ___ghsend_stack
+                  00000000+000000 ___lowinit
+ .text            00007f20+000024 ___mcopy
+                  00000000+000000 __cleanup
+ .tdata           febc048c+000000 __ep
+ .text            00007f44+00006a __exit
+                  00000000+000000 __ghs_rh850_misalign
+                  00000000+000000 __ghs_v800_r20_initializer
+                  00000000+000000 __ghs_v800_r21_initializer
+                  00000000+000000 __ghs_v800_r22_initializer
+                  00000000+000000 __ghs_v800_r23_initializer
+                  00000000+000000 __ghs_v800_r24_initializer
+                  00000001+000000 __ghs_v800_sda_model
+ .sda_start       febc048c+000000 __gp
+ .bss             febc0060+000030 __multiArgs
+ .data            febc002c+000004 __multibufSize
+ .bss             febc009e+0003e8 __multibuffer
+ .text            000079f8+000004 __multiend
+ .text            000007f0+0000ee __start
+                  fec00000+000000 __top_of_iRAM_0
+                  fef10000+000000 __top_of_iRAM_R
+                  01008000+000000 __top_of_iROM1
+                  00400000+000000 __top_of_iROM_0
+ .rosdata         000087e4+000000 __tp
+ .text            000015d2+000000 __unused_isr
+ .text            000015d4+000044 _eiint0
+ .text            00001618+000044 _eiint1
+ .text            0000187c+000044 _eiint10
+ .text            00003064+000044 _eiint100
+ .text            000030a8+000044 _eiint101
+ .text            000030ec+000044 _eiint102
+ .text            00003130+000044 _eiint103
+ .text            00003174+000044 _eiint104
+ .text            000031b8+000044 _eiint105
+ .text            000031fc+000044 _eiint106
+ .text            00003240+000044 _eiint107
+ .text            00003284+000044 _eiint108
+ .text            000032c8+000044 _eiint109
+ .text            000018c0+000044 _eiint11
+ .text            0000330c+000044 _eiint110
+ .text            00003350+000044 _eiint111
+ .text            00003394+000044 _eiint112
+ .text            000033d8+000044 _eiint113
+ .text            0000341c+000044 _eiint114
+ .text            00003460+000044 _eiint115
+ .text            000034a4+000044 _eiint116
+ .text            000034e8+000044 _eiint117
+ .text            0000352c+000044 _eiint118
+ .text            00003570+000044 _eiint119
+ .text            00001904+000044 _eiint12
+ .text            000035b4+000044 _eiint120
+ .text            000035f8+000044 _eiint121
+ .text            0000363c+000044 _eiint122
+ .text            00003680+000044 _eiint123
+ .text            000036c4+000044 _eiint124
+ .text            00003708+000044 _eiint125
+ .text            0000374c+000044 _eiint126
+ .text            00003790+000044 _eiint127
+ .text            000037d4+000044 _eiint128
+ .text            00003818+000044 _eiint129
+ .text            00001948+000044 _eiint13
+ .text            0000385c+000044 _eiint130
+ .text            000038a0+000044 _eiint131
+ .text            000038e4+000044 _eiint132
+ .text            00003928+000044 _eiint133
+ .text            0000396c+000044 _eiint134
+ .text            000039b0+000044 _eiint135
+ .text            000039f4+000044 _eiint136
+ .text            00003a38+000044 _eiint137
+ .text            00003a7c+000044 _eiint138
+ .text            00003ac0+000044 _eiint139
+ .text            0000198c+000044 _eiint14
+ .text            00003b04+000044 _eiint140
+ .text            00003b48+000044 _eiint141
+ .text            00003b8c+000044 _eiint142
+ .text            00003bd0+000044 _eiint143
+ .text            00003c14+000044 _eiint144
+ .text            00003c58+000044 _eiint145
+ .text            00003c9c+000044 _eiint146
+ .text            00003ce0+000044 _eiint147
+ .text            00003d24+000044 _eiint148
+ .text            00003d68+000044 _eiint149
+ .text            000019d0+000044 _eiint15
+ .text            00003dac+000044 _eiint150
+ .text            00003df0+000044 _eiint151
+ .text            00003e34+000044 _eiint152
+ .text            00003e78+000044 _eiint153
+ .text            00003ebc+000044 _eiint154
+ .text            00003f00+000044 _eiint155
+ .text            00003f44+000044 _eiint156
+ .text            00003f88+000044 _eiint157
+ .text            00003fcc+000044 _eiint158
+ .text            00004010+000044 _eiint159
+ .text            00001a14+000044 _eiint16
+ .text            00004054+000044 _eiint160
+ .text            00004098+000044 _eiint161
+ .text            000040dc+000044 _eiint162
+ .text            00004120+000044 _eiint163
+ .text            00004164+000044 _eiint164
+ .text            000041a8+000044 _eiint165
+ .text            000041ec+000044 _eiint166
+ .text            00004230+000044 _eiint167
+ .text            00004274+000044 _eiint168
+ .text            000042b8+000044 _eiint169
+ .text            00001a58+000044 _eiint17
+ .text            000042fc+000044 _eiint170
+ .text            00004340+000044 _eiint171
+ .text            00004384+000044 _eiint172
+ .text            000043c8+000044 _eiint173
+ .text            0000440c+000044 _eiint174
+ .text            00004450+000044 _eiint175
+ .text            00004494+000044 _eiint176
+ .text            000044d8+000044 _eiint177
+ .text            0000451c+000044 _eiint178
+ .text            00004560+000044 _eiint179
+ .text            00001a9c+000044 _eiint18
+ .text            000045a4+000044 _eiint180
+ .text            000045e8+000044 _eiint181
+ .text            0000462c+000044 _eiint182
+ .text            00004670+000044 _eiint183
+ .text            000046b4+000044 _eiint184
+ .text            000046f8+000044 _eiint185
+ .text            0000473c+000044 _eiint186
+ .text            00004780+000044 _eiint187
+ .text            000047c4+000044 _eiint188
+ .text            00004808+000044 _eiint189
+ .text            00001ae0+000044 _eiint19
+ .text            0000484c+000044 _eiint190
+ .text            00004890+000044 _eiint191
+ .text            000048d4+000044 _eiint192
+ .text            00004918+000044 _eiint193
+ .text            0000495c+000044 _eiint194
+ .text            000049a0+000044 _eiint195
+ .text            000049e4+000044 _eiint196
+ .text            00004a28+000044 _eiint197
+ .text            00004a6c+000044 _eiint198
+ .text            00004ab0+000044 _eiint199
+ .text            0000165c+000044 _eiint2
+ .text            00001b24+000044 _eiint20
+ .text            00004af4+000044 _eiint200
+ .text            00004b38+000044 _eiint201
+ .text            00004b7c+000044 _eiint202
+ .text            00004bc0+000044 _eiint203
+ .text            00004c04+000044 _eiint204
+ .text            00004c48+000044 _eiint205
+ .text            00004c8c+000044 _eiint206
+ .text            00004cd0+000044 _eiint207
+ .text            00004d14+000044 _eiint208
+ .text            00004d58+000044 _eiint209
+ .text            00001b68+000044 _eiint21
+ .text            00004d9c+000044 _eiint210
+ .text            00004de0+000044 _eiint211
+ .text            00004e24+000044 _eiint212
+ .text            00004e68+000044 _eiint213
+ .text            00004eac+000044 _eiint214
+ .text            00004ef0+000044 _eiint215
+ .text            00004f34+000044 _eiint216
+ .text            00004f78+000044 _eiint217
+ .text            00004fbc+000044 _eiint218
+ .text            00005000+000044 _eiint219
+ .text            00001bac+000044 _eiint22
+ .text            00005044+000044 _eiint220
+ .text            00005088+000044 _eiint221
+ .text            000050cc+000044 _eiint222
+ .text            00005110+000044 _eiint223
+ .text            00005154+000044 _eiint224
+ .text            00005198+000044 _eiint225
+ .text            000051dc+000044 _eiint226
+ .text            00005220+000044 _eiint227
+ .text            00005264+000044 _eiint228
+ .text            000052a8+000044 _eiint229
+ .text            00001bf0+000044 _eiint23
+ .text            000052ec+000044 _eiint230
+ .text            00005330+000044 _eiint231
+ .text            00005374+000044 _eiint232
+ .text            000053b8+000044 _eiint233
+ .text            000053fc+000044 _eiint234
+ .text            00005440+000044 _eiint235
+ .text            00005484+000044 _eiint236
+ .text            000054c8+000044 _eiint237
+ .text            0000550c+000044 _eiint238
+ .text            00005550+000044 _eiint239
+ .text            00001c34+000044 _eiint24
+ .text            00005594+000044 _eiint240
+ .text            000055d8+000044 _eiint241
+ .text            0000561c+000044 _eiint242
+ .text            00005660+000044 _eiint243
+ .text            000056a4+000044 _eiint244
+ .text            000056e8+000044 _eiint245
+ .text            0000572c+000044 _eiint246
+ .text            00005770+000044 _eiint247
+ .text            000057b4+000044 _eiint248
+ .text            000057f8+000044 _eiint249
+ .text            00001c78+000044 _eiint25
+ .text            0000583c+000044 _eiint250
+ .text            00005880+000044 _eiint251
+ .text            000058c4+000044 _eiint252
+ .text            00005908+000044 _eiint253
+ .text            0000594c+000044 _eiint254
+ .text            00005990+000044 _eiint255
+ .text            000059d4+000044 _eiint256
+ .text            00005a18+000044 _eiint257
+ .text            00005a5c+000044 _eiint258
+ .text            00005aa0+000044 _eiint259
+ .text            00001cbc+000044 _eiint26
+ .text            00005ae4+000044 _eiint260
+ .text            00005b28+000044 _eiint261
+ .text            00005b6c+000044 _eiint262
+ .text            00005bb0+000044 _eiint263
+ .text            00005bf4+000044 _eiint264
+ .text            00005c38+000044 _eiint265
+ .text            00005c7c+000044 _eiint266
+ .text            00005cc0+000044 _eiint267
+ .text            00005d04+000044 _eiint268
+ .text            00005d48+000044 _eiint269
+ .text            00001d00+000044 _eiint27
+ .text            00005d8c+000044 _eiint270
+ .text            00005dd0+000044 _eiint271
+ .text            00005e14+000044 _eiint272
+ .text            00005e58+000044 _eiint273
+ .text            00005e9c+000044 _eiint274
+ .text            00005ee0+000044 _eiint275
+ .text            00005f24+000044 _eiint276
+ .text            00005f68+000044 _eiint277
+ .text            00005fac+000044 _eiint278
+ .text            00005ff0+000044 _eiint279
+ .text            00001d44+000044 _eiint28
+ .text            00006034+000044 _eiint280
+ .text            00006078+000044 _eiint281
+ .text            000060bc+000044 _eiint282
+ .text            00006100+000044 _eiint283
+ .text            00006144+000044 _eiint284
+ .text            00006188+000044 _eiint285
+ .text            000061cc+000044 _eiint286
+ .text            00006210+000044 _eiint287
+ .text            00006254+000044 _eiint288
+ .text            00006298+000044 _eiint289
+ .text            00001d88+000044 _eiint29
+ .text            000062dc+000044 _eiint290
+ .text            00006320+000044 _eiint291
+ .text            00006364+000044 _eiint292
+ .text            000063a8+000044 _eiint293
+ .text            000063ec+000044 _eiint294
+ .text            00006430+000044 _eiint295
+ .text            00006474+000044 _eiint296
+ .text            000064b8+000044 _eiint297
+ .text            000064fc+000044 _eiint298
+ .text            00006540+000044 _eiint299
+ .text            000016a0+000044 _eiint3
+ .text            00001dcc+000044 _eiint30
+ .text            00006584+000044 _eiint300
+ .text            000065c8+000044 _eiint301
+ .text            0000660c+000044 _eiint302
+ .text            00006650+000044 _eiint303
+ .text            00006694+000044 _eiint304
+ .text            000066d8+000044 _eiint305
+ .text            0000671c+000044 _eiint306
+ .text            00006760+000044 _eiint307
+ .text            000067a4+000044 _eiint308
+ .text            000067e8+000044 _eiint309
+ .text            00001e10+000044 _eiint31
+ .text            0000682c+000044 _eiint310
+ .text            00006870+000044 _eiint311
+ .text            000068b4+000044 _eiint312
+ .text            000068f8+000044 _eiint313
+ .text            0000693c+000044 _eiint314
+ .text            00006980+000044 _eiint315
+ .text            000069c4+000044 _eiint316
+ .text            00006a08+000044 _eiint317
+ .text            00006a4c+000044 _eiint318
+ .text            00006a90+000044 _eiint319
+ .text            00001e54+000044 _eiint32
+ .text            00006ad4+000044 _eiint320
+ .text            00006b18+000044 _eiint321
+ .text            00006b5c+000044 _eiint322
+ .text            00006ba0+000044 _eiint323
+ .text            00006be4+000044 _eiint324
+ .text            00006c28+000044 _eiint325
+ .text            00006c6c+000044 _eiint326
+ .text            00006cb0+000044 _eiint327
+ .text            00006cf4+000044 _eiint328
+ .text            00006d38+000044 _eiint329
+ .text            00001e98+000044 _eiint33
+ .text            00006d7c+000044 _eiint330
+ .text            00006dc0+000044 _eiint331
+ .text            00006e04+000044 _eiint332
+ .text            00006e48+000044 _eiint333
+ .text            00006e8c+000044 _eiint334
+ .text            00006ed0+000044 _eiint335
+ .text            00006f14+000044 _eiint336
+ .text            00006f58+000044 _eiint337
+ .text            00006f9c+000044 _eiint338
+ .text            00006fe0+000044 _eiint339
+ .text            00001edc+000044 _eiint34
+ .text            00007024+000044 _eiint340
+ .text            00007068+000044 _eiint341
+ .text            000070ac+000044 _eiint342
+ .text            000070f0+000044 _eiint343
+ .text            00007134+000044 _eiint344
+ .text            00007178+000044 _eiint345
+ .text            000071bc+000044 _eiint346
+ .text            00007200+000044 _eiint347
+ .text            00007244+000044 _eiint348
+ .text            00007288+000044 _eiint349
+ .text            00001f20+000044 _eiint35
+ .text            000072cc+000044 _eiint350
+ .text            00007310+000044 _eiint351
+ .text            00007354+000044 _eiint352
+ .text            00007398+000044 _eiint353
+ .text            000073dc+000044 _eiint354
+ .text            00007420+000044 _eiint355
+ .text            00007464+000044 _eiint356
+ .text            000074a8+000044 _eiint357
+ .text            000074ec+000044 _eiint358
+ .text            00007530+000044 _eiint359
+ .text            00001f64+000044 _eiint36
+ .text            00007574+000044 _eiint360
+ .text            000075b8+000044 _eiint361
+ .text            000075fc+000044 _eiint362
+ .text            00007640+000044 _eiint363
+ .text            00007684+000044 _eiint364
+ .text            000076c8+000044 _eiint365
+ .text            0000770c+000044 _eiint366
+ .text            00007750+000044 _eiint367
+ .text            00007794+000044 _eiint368
+ .text            000077d8+000044 _eiint369
+ .text            00001fa8+000044 _eiint37
+ .text            0000781c+000044 _eiint370
+ .text            00007860+000044 _eiint371
+ .text            000078a4+000044 _eiint372
+ .text            000078e8+000044 _eiint373
+ .text            0000792c+000044 _eiint374
+ .text            00007970+000044 _eiint375
+ .text            000079b4+000044 _eiint376
+ .text            00001fec+000044 _eiint38
+ .text            00002030+000044 _eiint39
+ .text            000016e4+000044 _eiint4
+ .text            00002074+000044 _eiint40
+ .text            000020b8+000044 _eiint41
+ .text            000020fc+000044 _eiint42
+ .text            00002140+000044 _eiint43
+ .text            00002184+000044 _eiint44
+ .text            000021c8+000044 _eiint45
+ .text            0000220c+000044 _eiint46
+ .text            00002250+000044 _eiint47
+ .text            00002294+000044 _eiint48
+ .text            000022d8+000044 _eiint49
+ .text            00001728+000044 _eiint5
+ .text            0000231c+000044 _eiint50
+ .text            00002360+000044 _eiint51
+ .text            000023a4+000044 _eiint52
+ .text            000023e8+000044 _eiint53
+ .text            0000242c+000044 _eiint54
+ .text            00002470+000044 _eiint55
+ .text            000024b4+000044 _eiint56
+ .text            000024f8+000044 _eiint57
+ .text            0000253c+000044 _eiint58
+ .text            00002580+000044 _eiint59
+ .text            0000176c+000044 _eiint6
+ .text            000025c4+000044 _eiint60
+ .text            00002608+000044 _eiint61
+ .text            0000264c+000044 _eiint62
+ .text            00002690+000044 _eiint63
+ .text            000026d4+000044 _eiint64
+ .text            00002718+000044 _eiint65
+ .text            0000275c+000044 _eiint66
+ .text            000027a0+000044 _eiint67
+ .text            000027e4+000044 _eiint68
+ .text            00002828+000044 _eiint69
+ .text            000017b0+000044 _eiint7
+ .text            0000286c+000044 _eiint70
+ .text            000028b0+000044 _eiint71
+ .text            000028f4+000044 _eiint72
+ .text            00002938+000044 _eiint73
+ .text            0000297c+000044 _eiint74
+ .text            000029c0+000044 _eiint75
+ .text            00002a04+000044 _eiint76
+ .text            00002a48+000044 _eiint77
+ .text            00002a8c+000044 _eiint78
+ .text            00002ad0+000044 _eiint79
+ .text            000017f4+000044 _eiint8
+ .text            00002b14+000044 _eiint80
+ .text            00002b58+000044 _eiint81
+ .text            00002b9c+000044 _eiint82
+ .text            00002be0+000044 _eiint83
+ .text            00002c24+000044 _eiint84
+ .text            00002c68+000044 _eiint85
+ .text            00002cac+000044 _eiint86
+ .text            00002cf0+000044 _eiint87
+ .text            00002d34+000044 _eiint88
+ .text            00002d78+000044 _eiint89
+ .text            00001838+000044 _eiint9
+ .text            00002dbc+000044 _eiint90
+ .text            00002e00+000044 _eiint91
+ .text            00002e44+000044 _eiint92
+ .text            00002e88+000044 _eiint93
+ .text            00002ecc+000044 _eiint94
+ .text            00002f10+000044 _eiint95
+ .text            00002f54+000044 _eiint96
+ .text            00002f98+000044 _eiint97
+ .text            00002fdc+000044 _eiint98
+ .text            00003020+000044 _eiint99
+ .bss             febc0090+000004 _environ
+ .bss             febc0094+000004 _errno
+ .text            000079fe+000066 _exit
+ .bss             febc004c+000004 _g_cg_sync_read
+ .bss             febc009a+000002 _g_csig0_rx_num
+ .bss             febc009c+000002 _g_csig0_rx_total_num
+ .bss             febc0098+000002 _g_csig0_tx_num
+ .bss             febc0054+000004 _gp_csig0_rx_address
+ .bss             febc0050+000004 _gp_csig0_tx_address
+ .data            febc0000+000004 _i
+ .bss             febc0058+000004 _j
+ .bss             febc005c+000004 _k
+ .text            000012a4+0000bc _main
+ .text            00007e30+0000f0 _memcpy
+ .text            00007e30+0000f0 _memcpy..trg.2Frh850.2Fobjs.2Flibs.2Flibstartup.2Find_mcpy.
+ .text            00007e30+000000 _memcpy_mcopy
+ .text            00007dd0+000060 _memset
+ .text            000079fc+000002 _multiBreak
+ .text            000079f8+000000 _multiCall
+ .text            00000d60+000002 _r_Config_CSIG0_callback_sendend..D.3A.5C00.2EFuco.2Dele_Work.5CMicrocontrol.5CRH850.5CSmart_Configuration.5CSample.5CSeminar_R7F701649.5Cobjs.5CConfig_CSIG0_user.
+ .text            00000cb4+0000ac _r_Config_CSIG0_interrupt_send
+ .data            febc0004+000026 _send_data
+                  00000000+000000 _undefined_cleanup
+                  00000000+000000 _undefined_cleanup_func
